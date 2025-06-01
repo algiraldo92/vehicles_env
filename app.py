@@ -19,5 +19,5 @@ if hist_button: # al hacer click en el boton
 scat_button = st.button('Construir Grafico de dispersion')
 if scat_button:
     st.write('Creacion de un grafico de dispersion para el conjunto de datos de anuncios de venta de coches')
-    fig = px.scatter(car_data, x = 'odomometer')
+    fig = px.scatter(car_data, y = 'odometer')
     st.plotly_chart(fig,use_container_width=True)
